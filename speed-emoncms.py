@@ -83,7 +83,7 @@ def speed():
         print time.asctime( time.localtime(time.time()) ),
         print ' This error occurred: ' + str(ex)
 
-    print '{},{},{},{},{}'.format(time.strftime('%m/%d/%y'), time.strftime('%H:%M'), ping[0], download[0], upload[0])
+    #print '{},{},{},{},{}'.format(time.strftime('%m/%d/%y'), time.strftime('%H:%M'), ping[0], download[0], upload[0])
     print ping, download, upload
 
 
