@@ -60,7 +60,7 @@ def emoncms():
         conarg1 = ('/', emoncmspath, '/input/post?node=', str(nodeid), '&csv=', str_join, '&apikey=', apikey)
         conarg = "".join(str(x) for x in conarg1)
 
-        conn.request("GET", conarg)
+        conn.request("GET", conarg, headers = {"user-agent": "Mozilla/5.0"})
 
         response = conn.getresponse()
         print time.asctime( time.localtime(time.time()) ),
